@@ -1,5 +1,5 @@
 
-[![logo](./images/Colossal-AI_logo.png)](https://www.colossalai.org/)
+[![logo](Colossal-AI_logo.png)](https://www.colossalai.org/)
 
 
 ## Masked Autoencoders: A Colossal-AI Implementation
