@@ -23,6 +23,11 @@ import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
 import colossalai
+from colossalai.context import ParallelMode
+from colossalai.core import global_context as gpc
+from colossalai.logging import disable_existing_loggers, get_dist_logger
+from colossalai.nn.lr_scheduler import LinearWarmupLR
+from colossalai.trainer import Trainer, hooks
 
 import timm
 
