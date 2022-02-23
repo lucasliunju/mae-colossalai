@@ -114,6 +114,8 @@ def get_args_parser():
 def main(args):
     # misc.init_distributed_mode(args)
 
+    colossalai.launch_from_torch(config='./config.py') 
+
     print('job dir: {}'.format(os.path.dirname(os.path.realpath(__file__))))
     print("{}".format(args).replace(', ', ',\n'))
 
