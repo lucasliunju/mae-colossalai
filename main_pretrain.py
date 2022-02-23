@@ -196,8 +196,8 @@ def main(args):
     loss_scaler = NativeScaler()
 
     # misc.load_model(args=args, model_without_ddp=model_without_ddp, optimizer=optimizer, loss_scaler=loss_scaler)
-
-    engine, train_dataloader, test_dataloader, _ = colossalai.initialized(model,
+`
+    engine, train_dataloader, test_dataloader, _ = colossalai.initialize(model,
                                                                           optimizer,
                                                                           loss_scaler,
                                                                           data_loader_train)
